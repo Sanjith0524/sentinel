@@ -1,0 +1,7090 @@
+{
+  "meta": {
+    "n_employees": 500,
+    "n_test_events": 42225,
+    "n_incidents": 55,
+    "roc_auc": 0.891,
+    "pr_auc": 0.354
+  },
+  "incidents": [
+    {
+      "incident_id": "INC-001",
+      "attack_id": "ATK017",
+      "entity_id": "U0281",
+      "entity_name": "Tammie Bright",
+      "department": "Legal",
+      "true_type": "brute_force",
+      "type_label": "Brute Force",
+      "n_events": 16,
+      "n_factors": 4,
+      "threat_score": 87,
+      "top_factors": [
+        {
+          "feature": "failure burst",
+          "z": 11.35
+        },
+        {
+          "feature": "auth failure",
+          "z": 9.55
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.04
+        }
+      ],
+      "feature_vector": [
+        5.983,
+        9.042,
+        2.894,
+        3.732,
+        3.716,
+        1.421,
+        9.546,
+        0.217,
+        6.017,
+        1.625,
+        9.336,
+        11.345,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-16 00:00:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 00:00:03",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 00:00:12",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 00:00:12",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 00:00:15",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 00:00:16",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 00:00:21",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 00:00:22",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 00:00:24",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 00:00:28",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-16 00:00:32",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 00:00:50",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-16 00:01:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 00:01:03",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 00:01:05",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 00:01:15",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-16 00:00:00",
+      "narrative": "At Jun 16, 00:00, Tammie Bright (Legal) showed activity from Russia using a device whose fingerprint did not match its history. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Brute Force with a threat score of 87.",
+      "recommended_actions": [
+        "Lock account",
+        "Block source IP",
+        "Force password reset"
+      ]
+    },
+    {
+      "incident_id": "INC-002",
+      "attack_id": "ATK019",
+      "entity_id": "U0281",
+      "entity_name": "Tammie Bright",
+      "department": "Legal",
+      "true_type": "brute_force",
+      "type_label": "Brute Force",
+      "n_events": 20,
+      "n_factors": 4,
+      "threat_score": 86,
+      "top_factors": [
+        {
+          "feature": "failure burst",
+          "z": 12.26
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "auth failure",
+          "z": 9.27
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.04
+        }
+      ],
+      "feature_vector": [
+        0.522,
+        9.042,
+        2.894,
+        3.732,
+        3.716,
+        1.421,
+        9.27,
+        0.498,
+        -0.166,
+        1.625,
+        9.336,
+        12.263,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-23 16:00:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 16:00:06",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 16:00:12",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 16:00:14",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 16:00:15",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 16:00:18",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 16:00:24",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 16:00:24",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 16:00:30",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-23 16:00:36",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 16:00:39",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 16:00:45",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 16:00:45",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 16:00:54",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 16:00:55",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 16:01:04",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 16:01:24",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 16:01:35",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-23 16:01:38",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 16:01:42",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-23 16:00:00",
+      "narrative": "At Jun 23, 16:00, Tammie Bright (Legal) showed activity from Russia using a device whose fingerprint did not match its history. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Brute Force with a threat score of 86.",
+      "recommended_actions": [
+        "Lock account",
+        "Block source IP",
+        "Force password reset"
+      ]
+    },
+    {
+      "incident_id": "INC-003",
+      "attack_id": "ATK004",
+      "entity_id": "U0151",
+      "entity_name": "Pamela Boyd",
+      "department": "Engineering",
+      "true_type": "brute_force",
+      "type_label": "Brute Force",
+      "n_events": 11,
+      "n_factors": 4,
+      "threat_score": 85,
+      "top_factors": [
+        {
+          "feature": "failure burst",
+          "z": 12.39
+        },
+        {
+          "feature": "auth failure",
+          "z": 10.92
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.14
+        }
+      ],
+      "feature_vector": [
+        2.142,
+        9.14,
+        2.981,
+        3.732,
+        3.716,
+        3.155,
+        10.922,
+        0.279,
+        -0.166,
+        1.625,
+        9.336,
+        12.388,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-15 10:00:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-15 10:00:02",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-15 10:00:04",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-15 10:00:12",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-15 10:00:12",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-15 10:00:12",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-15 10:00:16",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-15 10:00:25",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-15 10:00:28",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-15 10:00:36",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-15 10:01:10",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-15 10:00:00",
+      "narrative": "At Jun 15, 10:00, Pamela Boyd (Engineering) showed activity from Russia using a device whose fingerprint did not match its history. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Brute Force with a threat score of 85.",
+      "recommended_actions": [
+        "Lock account",
+        "Block source IP",
+        "Force password reset"
+      ]
+    },
+    {
+      "incident_id": "INC-004",
+      "attack_id": "ATK043",
+      "entity_id": "U0360",
+      "entity_name": "Parker Cain",
+      "department": "Finance",
+      "true_type": "brute_force",
+      "type_label": "Brute Force",
+      "n_events": 12,
+      "n_factors": 4,
+      "threat_score": 84,
+      "top_factors": [
+        {
+          "feature": "failure burst",
+          "z": 12.62
+        },
+        {
+          "feature": "auth failure",
+          "z": 10.92
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.14
+        }
+      ],
+      "feature_vector": [
+        -0.611,
+        9.14,
+        2.981,
+        3.732,
+        3.716,
+        2.694,
+        10.922,
+        0.897,
+        -0.166,
+        1.625,
+        9.336,
+        12.62,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-06 13:00:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 13:00:04",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 13:00:08",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 13:00:10",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 13:00:10",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 13:00:12",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 13:00:14",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 13:00:16",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 13:00:24",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 13:00:36",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 13:00:40",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 13:00:44",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-06 13:00:00",
+      "narrative": "At Jun 06, 13:00, Parker Cain (Finance) showed activity from Russia using a device whose fingerprint did not match its history. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Brute Force with a threat score of 84.",
+      "recommended_actions": [
+        "Lock account",
+        "Block source IP",
+        "Force password reset"
+      ]
+    },
+    {
+      "incident_id": "INC-005",
+      "attack_id": "ATK046",
+      "entity_id": "U0093",
+      "entity_name": "Christina Walters",
+      "department": "Engineering",
+      "true_type": "brute_force",
+      "type_label": "Brute Force",
+      "n_events": 21,
+      "n_factors": 4,
+      "threat_score": 84,
+      "top_factors": [
+        {
+          "feature": "failure burst",
+          "z": 11.24
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.14
+        },
+        {
+          "feature": "auth failure",
+          "z": 8.3
+        }
+      ],
+      "feature_vector": [
+        2.927,
+        9.14,
+        2.981,
+        3.732,
+        3.716,
+        2.717,
+        8.3,
+        -0.003,
+        -0.166,
+        1.625,
+        9.336,
+        11.236,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-07 20:00:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 20:00:06",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 20:00:07",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 20:00:12",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 20:00:15",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 20:00:18",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 20:00:28",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 20:00:28",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 20:00:32",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 20:00:34",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 20:00:36",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-07 20:00:40",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-07 20:00:45",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 20:00:55",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 20:00:56",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 20:01:05",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 20:01:10",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 20:01:20",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-07 20:01:24",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 20:01:35",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-07 20:01:45",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-07 20:00:00",
+      "narrative": "At Jun 07, 20:00, Christina Walters (Engineering) showed activity from Russia using a device whose fingerprint did not match its history. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Brute Force with a threat score of 84.",
+      "recommended_actions": [
+        "Lock account",
+        "Block source IP",
+        "Force password reset"
+      ]
+    },
+    {
+      "incident_id": "INC-006",
+      "attack_id": "ATK023",
+      "entity_id": "U0034",
+      "entity_name": "Debra Davidson",
+      "department": "Sales",
+      "true_type": "brute_force",
+      "type_label": "Brute Force",
+      "n_events": 22,
+      "n_factors": 4,
+      "threat_score": 83,
+      "top_factors": [
+        {
+          "feature": "failure burst",
+          "z": 10.3
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.14
+        },
+        {
+          "feature": "auth failure",
+          "z": 7.42
+        }
+      ],
+      "feature_vector": [
+        -0.377,
+        9.14,
+        2.981,
+        3.732,
+        3.716,
+        2.372,
+        7.418,
+        0.444,
+        -0.166,
+        1.625,
+        9.336,
+        10.303,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-18 12:00:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 12:00:05",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 12:00:14",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 12:00:15",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 12:00:18",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 12:00:20",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 12:00:30",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-18 12:00:36",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 12:00:39",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-18 12:00:42",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 12:00:48",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 12:00:49",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 12:00:55",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 12:00:56",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 12:01:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 12:01:04",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 12:01:10",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 12:01:16",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-18 12:01:30",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-18 12:01:42",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-18 12:02:06",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-18 12:02:20",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-18 12:00:00",
+      "narrative": "At Jun 18, 12:00, Debra Davidson (Sales) showed activity from Russia using a device whose fingerprint did not match its history. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Brute Force with a threat score of 83.",
+      "recommended_actions": [
+        "Lock account",
+        "Block source IP",
+        "Force password reset"
+      ]
+    },
+    {
+      "incident_id": "INC-007",
+      "attack_id": "ATK050",
+      "entity_id": "U0334",
+      "entity_name": "Dana Martinez",
+      "department": "Marketing",
+      "true_type": "brute_force",
+      "type_label": "Brute Force",
+      "n_events": 23,
+      "n_factors": 4,
+      "threat_score": 83,
+      "top_factors": [
+        {
+          "feature": "failure burst",
+          "z": 10.38
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.11
+        },
+        {
+          "feature": "auth failure",
+          "z": 7.57
+        }
+      ],
+      "feature_vector": [
+        1.481,
+        9.11,
+        2.954,
+        -0.268,
+        -0.269,
+        2.598,
+        7.57,
+        0.407,
+        -0.166,
+        1.625,
+        9.336,
+        10.381,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-16 16:00:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 16:00:05",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 16:00:10",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 16:00:12",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 16:00:14",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 16:00:20",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 16:00:24",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 16:00:25",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 16:00:30",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 16:00:33",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 16:00:36",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 16:00:36",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 16:00:40",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 16:00:42",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 16:00:57",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-16 16:01:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-16 16:01:20",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-16 16:01:25",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-16 16:01:31",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 16:01:38",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 16:01:45",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-16 16:01:50",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-16 16:02:06",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-16 16:00:00",
+      "narrative": "At Jun 16, 16:00, Dana Martinez (Marketing) showed activity from Russia. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Brute Force with a threat score of 83.",
+      "recommended_actions": [
+        "Lock account",
+        "Block source IP",
+        "Force password reset"
+      ]
+    },
+    {
+      "incident_id": "INC-008",
+      "attack_id": "ATK034",
+      "entity_id": "U0006",
+      "entity_name": "Abigail Shaffer",
+      "department": "Legal",
+      "true_type": "brute_force",
+      "type_label": "Brute Force",
+      "n_events": 11,
+      "n_factors": 4,
+      "threat_score": 82,
+      "top_factors": [
+        {
+          "feature": "failure burst",
+          "z": 12.39
+        },
+        {
+          "feature": "auth failure",
+          "z": 10.92
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.04
+        }
+      ],
+      "feature_vector": [
+        2.265,
+        9.036,
+        2.889,
+        -0.268,
+        -0.269,
+        2.229,
+        10.922,
+        0.443,
+        6.017,
+        1.625,
+        9.336,
+        12.388,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-16 03:00:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 03:00:02",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 03:00:08",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 03:00:10",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 03:00:12",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 03:00:18",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 03:00:18",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 03:00:20",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 03:00:40",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 03:00:45",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-16 03:00:49",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-16 03:00:00",
+      "narrative": "At Jun 16, 03:00, Abigail Shaffer (Legal) showed activity from Russia. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Brute Force with a threat score of 82.",
+      "recommended_actions": [
+        "Lock account",
+        "Block source IP",
+        "Force password reset"
+      ]
+    },
+    {
+      "incident_id": "INC-009",
+      "attack_id": "ATK010",
+      "entity_id": "U0477",
+      "entity_name": "Judith Carter",
+      "department": "Engineering",
+      "true_type": "brute_force",
+      "type_label": "Brute Force",
+      "n_events": 11,
+      "n_factors": 4,
+      "threat_score": 81,
+      "top_factors": [
+        {
+          "feature": "failure burst",
+          "z": 12.39
+        },
+        {
+          "feature": "auth failure",
+          "z": 10.92
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.14
+        }
+      ],
+      "feature_vector": [
+        0.991,
+        9.14,
+        2.981,
+        3.732,
+        -0.269,
+        2.738,
+        10.922,
+        0.827,
+        -0.166,
+        1.625,
+        9.336,
+        12.388,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-21 17:00:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-21 17:00:02",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-21 17:00:10",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-21 17:00:15",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-21 17:00:21",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-21 17:00:24",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-21 17:00:35",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-21 17:00:40",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-21 17:00:42",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-21 17:00:50",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-21 17:00:54",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-21 17:00:00",
+      "narrative": "At Jun 21, 17:00, Judith Carter (Engineering) showed activity from Russia. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Brute Force with a threat score of 81.",
+      "recommended_actions": [
+        "Lock account",
+        "Block source IP",
+        "Force password reset"
+      ]
+    },
+    {
+      "incident_id": "INC-010",
+      "attack_id": "ATK014",
+      "entity_id": "U0312",
+      "entity_name": "Shannon Ramsey",
+      "department": "Engineering",
+      "true_type": "brute_force",
+      "type_label": "Brute Force",
+      "n_events": 9,
+      "n_factors": 4,
+      "threat_score": 81,
+      "top_factors": [
+        {
+          "feature": "failure burst",
+          "z": 11.77
+        },
+        {
+          "feature": "auth failure",
+          "z": 10.92
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.08
+        }
+      ],
+      "feature_vector": [
+        2.288,
+        9.079,
+        2.873,
+        -0.268,
+        -0.269,
+        2.536,
+        10.922,
+        0.48,
+        -0.166,
+        1.625,
+        9.336,
+        11.77,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-28 20:00:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-28 20:00:05",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-28 20:00:14",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-28 20:00:16",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-28 20:00:21",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-28 20:00:21",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-28 20:00:24",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-28 20:00:24",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-28 20:00:30",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-28 20:00:00",
+      "narrative": "At Jun 28, 20:00, Shannon Ramsey (Engineering) showed activity from Russia. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Brute Force with a threat score of 81.",
+      "recommended_actions": [
+        "Lock account",
+        "Block source IP",
+        "Force password reset"
+      ]
+    },
+    {
+      "incident_id": "INC-011",
+      "attack_id": "ATK016",
+      "entity_id": "U0291",
+      "entity_name": "Stephanie Byrd",
+      "department": "Sales",
+      "true_type": "brute_force",
+      "type_label": "Brute Force",
+      "n_events": 10,
+      "n_factors": 4,
+      "threat_score": 81,
+      "top_factors": [
+        {
+          "feature": "failure burst",
+          "z": 12.11
+        },
+        {
+          "feature": "auth failure",
+          "z": 10.92
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.14
+        }
+      ],
+      "feature_vector": [
+        2.72,
+        9.14,
+        2.981,
+        3.732,
+        3.716,
+        2.161,
+        10.922,
+        0.534,
+        6.017,
+        1.625,
+        9.336,
+        12.11,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-06 02:00:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 02:00:06",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 02:00:10",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 02:00:12",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 02:00:20",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 02:00:21",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 02:00:21",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 02:00:32",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 02:00:42",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-06 02:00:54",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-06 02:00:00",
+      "narrative": "At Jun 06, 02:00, Stephanie Byrd (Sales) showed activity from Russia using a device whose fingerprint did not match its history. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Brute Force with a threat score of 81.",
+      "recommended_actions": [
+        "Lock account",
+        "Block source IP",
+        "Force password reset"
+      ]
+    },
+    {
+      "incident_id": "INC-012",
+      "attack_id": "ATK030",
+      "entity_id": "U0399",
+      "entity_name": "Hannah Luna",
+      "department": "Engineering",
+      "true_type": "brute_force",
+      "type_label": "Brute Force",
+      "n_events": 9,
+      "n_factors": 4,
+      "threat_score": 79,
+      "top_factors": [
+        {
+          "feature": "failure burst",
+          "z": 11.77
+        },
+        {
+          "feature": "auth failure",
+          "z": 10.92
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.14
+        }
+      ],
+      "feature_vector": [
+        -0.044,
+        9.14,
+        2.862,
+        -0.268,
+        -0.269,
+        1.58,
+        10.922,
+        0.159,
+        -0.166,
+        1.625,
+        9.336,
+        11.77,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-26 15:00:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-26 15:00:06",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-26 15:00:08",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-26 15:00:09",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-26 15:00:20",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-26 15:00:28",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-26 15:00:28",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-26 15:00:42",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-26 15:00:48",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-26 15:00:00",
+      "narrative": "At Jun 26, 15:00, Hannah Luna (Engineering) showed activity from Russia. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Brute Force with a threat score of 79.",
+      "recommended_actions": [
+        "Lock account",
+        "Block source IP",
+        "Force password reset"
+      ]
+    },
+    {
+      "incident_id": "INC-013",
+      "attack_id": "ATK028",
+      "entity_id": "U0208",
+      "entity_name": "Dr. William Warren",
+      "department": "Marketing",
+      "true_type": "brute_force",
+      "type_label": "Brute Force",
+      "n_events": 20,
+      "n_factors": 4,
+      "threat_score": 78,
+      "top_factors": [
+        {
+          "feature": "failure burst",
+          "z": 9.97
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 8.93
+        },
+        {
+          "feature": "auth failure",
+          "z": 7.62
+        }
+      ],
+      "feature_vector": [
+        0.192,
+        8.933,
+        2.859,
+        -0.268,
+        -0.269,
+        1.823,
+        7.618,
+        0.038,
+        -0.166,
+        1.625,
+        9.336,
+        9.969,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-23 10:00:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 10:00:04",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 10:00:04",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 10:00:15",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 10:00:15",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 10:00:20",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 10:00:21",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 10:00:22",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-23 10:00:28",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 10:00:30",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 10:00:34",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 10:00:36",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-23 10:00:48",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-23 10:00:48",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-23 10:00:56",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 10:01:03",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 10:01:10",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 10:01:30",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-23 10:01:31",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-23 10:01:54",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-23 10:00:00",
+      "narrative": "At Jun 23, 10:00, Dr. William Warren (Marketing) showed activity from Russia. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Brute Force with a threat score of 78.",
+      "recommended_actions": [
+        "Lock account",
+        "Block source IP",
+        "Force password reset"
+      ]
+    },
+    {
+      "incident_id": "INC-014",
+      "attack_id": "ATK049",
+      "entity_id": "U0494",
+      "entity_name": "Meghan Cisneros",
+      "department": "Finance",
+      "true_type": "brute_force",
+      "type_label": "Brute Force",
+      "n_events": 12,
+      "n_factors": 4,
+      "threat_score": 77,
+      "top_factors": [
+        {
+          "feature": "failure burst",
+          "z": 11.09
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "auth failure",
+          "z": 9.09
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.08
+        }
+      ],
+      "feature_vector": [
+        0.49,
+        9.08,
+        2.928,
+        -0.268,
+        -0.269,
+        2.855,
+        9.087,
+        0.105,
+        -0.166,
+        1.625,
+        9.336,
+        11.09,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-09 10:00:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-09 10:00:05",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-09 10:00:09",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-09 10:00:10",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-09 10:00:12",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-09 10:00:16",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-09 10:00:18",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-09 10:00:24",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-09 10:00:25",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-09 10:00:28",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-09 10:00:40",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-09 10:01:17",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-09 10:00:00",
+      "narrative": "At Jun 09, 10:00, Meghan Cisneros (Finance) showed activity from Russia. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Brute Force with a threat score of 77.",
+      "recommended_actions": [
+        "Lock account",
+        "Block source IP",
+        "Force password reset"
+      ]
+    },
+    {
+      "incident_id": "INC-015",
+      "attack_id": "ATK003",
+      "entity_id": "U0325",
+      "entity_name": "Patrick Moore",
+      "department": "Marketing",
+      "true_type": "brute_force",
+      "type_label": "Brute Force",
+      "n_events": 9,
+      "n_factors": 4,
+      "threat_score": 76,
+      "top_factors": [
+        {
+          "feature": "failure burst",
+          "z": 11.09
+        },
+        {
+          "feature": "auth failure",
+          "z": 9.7
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.12
+        }
+      ],
+      "feature_vector": [
+        5.052,
+        9.116,
+        2.959,
+        -0.268,
+        -0.269,
+        2.361,
+        9.699,
+        0.516,
+        6.017,
+        1.625,
+        9.336,
+        11.09,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-07 02:00:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 02:00:04",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 02:00:08",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 02:00:09",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 02:00:12",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 02:00:20",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 02:00:24",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-07 02:00:28",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-07 02:00:30",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-07 02:00:00",
+      "narrative": "At Jun 07, 02:00, Patrick Moore (Marketing) showed activity from Russia. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Brute Force with a threat score of 76.",
+      "recommended_actions": [
+        "Lock account",
+        "Block source IP",
+        "Force password reset"
+      ]
+    },
+    {
+      "incident_id": "INC-016",
+      "attack_id": "ATK120",
+      "entity_id": "U0275",
+      "entity_name": "Matthew Moore",
+      "department": "HR",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 74,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.47
+        },
+        {
+          "feature": "device unseen",
+          "z": 1.73
+        }
+      ],
+      "feature_vector": [
+        -0.529,
+        4.466,
+        -0.998,
+        1.732,
+        -0.269,
+        1.466,
+        -0.092,
+        5.886,
+        -0.166,
+        0.905,
+        4.614,
+        -0.126,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-14 13:00:00",
+          "geo": "IN",
+          "resource": "recruiting_db",
+          "device": "U0275-D1",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-14 13:04:00",
+          "geo": "BR",
+          "resource": "payroll_api",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "BR",
+      "timestamp": "2025-06-14 13:00:00",
+      "narrative": "At Jun 14, 13:00, Matthew Moore (HR) showed activity from India. The session touched payroll_api, recruiting_db. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 74.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-017",
+      "attack_id": "ATK247",
+      "entity_id": "U0275",
+      "entity_name": "Matthew Moore",
+      "department": "HR",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 74,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 9.28
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.47
+        },
+        {
+          "feature": "device unseen",
+          "z": 1.73
+        }
+      ],
+      "feature_vector": [
+        -1.167,
+        4.466,
+        0.991,
+        1.732,
+        -0.269,
+        1.466,
+        -0.092,
+        9.283,
+        -0.166,
+        0.905,
+        4.614,
+        -0.126,
+        -0.184
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-15 12:00:00",
+          "geo": "IN",
+          "resource": "recruiting_db",
+          "device": "U0275-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-15 12:04:00",
+          "geo": "US",
+          "resource": "finance_db",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "IN",
+      "timestamp": "2025-06-15 12:00:00",
+      "narrative": "At Jun 15, 12:00, Matthew Moore (HR) showed activity from India. The session touched finance_db, recruiting_db. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 74.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-018",
+      "attack_id": "ATK309",
+      "entity_id": "U0158",
+      "entity_name": "Melissa Gates",
+      "department": "Engineering",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 73,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.51
+        },
+        {
+          "feature": "failure burst",
+          "z": 2.93
+        }
+      ],
+      "feature_vector": [
+        0.081,
+        4.512,
+        1.555,
+        -0.268,
+        -0.269,
+        -0.119,
+        -0.092,
+        5.886,
+        -0.166,
+        0.905,
+        4.614,
+        2.933,
+        -0.184
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-23 17:00:00",
+          "geo": "IN",
+          "resource": "ci_pipeline",
+          "device": "U0158-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-23 17:10:00",
+          "geo": "BR",
+          "resource": "finance_db",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "BR",
+      "timestamp": "2025-06-23 17:00:00",
+      "narrative": "At Jun 23, 17:00, Melissa Gates (Engineering) showed activity from India. The session touched ci_pipeline, finance_db. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 73.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-019",
+      "attack_id": "ATK148",
+      "entity_id": "U0261",
+      "entity_name": "Desiree Tyler",
+      "department": "Engineering",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 72,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.47
+        },
+        {
+          "feature": "device unseen",
+          "z": 1.73
+        }
+      ],
+      "feature_vector": [
+        -0.295,
+        4.466,
+        1.644,
+        1.732,
+        1.723,
+        0.431,
+        -0.092,
+        5.886,
+        -0.166,
+        1.445,
+        4.614,
+        -0.126,
+        0.331
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-26 12:00:00",
+          "geo": "IN",
+          "resource": "prod_db",
+          "device": "U0261-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-26 12:21:00",
+          "geo": "RU",
+          "resource": "finance_db",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        }
+      ],
+      "geo": "IN",
+      "timestamp": "2025-06-26 12:00:00",
+      "narrative": "At Jun 26, 12:00, Desiree Tyler (Engineering) showed activity from India using a device whose fingerprint did not match its history. The session touched finance_db, prod_db. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 72.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-020",
+      "attack_id": "ATK276",
+      "entity_id": "U0208",
+      "entity_name": "Dr. William Warren",
+      "department": "Marketing",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 71,
+      "top_factors": [
+        {
+          "feature": "duration deviation",
+          "z": 6.68
+        },
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.57
+        }
+      ],
+      "feature_vector": [
+        -0.314,
+        4.57,
+        1.731,
+        -0.268,
+        -0.269,
+        6.684,
+        -0.092,
+        5.886,
+        -0.166,
+        0.185,
+        4.614,
+        -0.126,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-11 11:00:00",
+          "geo": "IN",
+          "resource": "social_tool",
+          "device": "U0208-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-11 11:19:00",
+          "geo": "US",
+          "resource": "prod_db",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "IN",
+      "timestamp": "2025-06-11 11:00:00",
+      "narrative": "At Jun 11, 11:00, Dr. William Warren (Marketing) showed activity from India. The session touched prod_db, social_tool. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 71.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-021",
+      "attack_id": "ATK819",
+      "entity_id": "U0261",
+      "entity_name": "Desiree Tyler",
+      "department": "Engineering",
+      "true_type": "lateral_movement",
+      "type_label": "Lateral Movement",
+      "n_events": 5,
+      "n_factors": 4,
+      "threat_score": 71,
+      "top_factors": [
+        {
+          "feature": "hour deviation",
+          "z": 7.28
+        },
+        {
+          "feature": "off hours",
+          "z": 6.02
+        },
+        {
+          "feature": "resource novelty",
+          "z": 2.98
+        },
+        {
+          "feature": "duration deviation",
+          "z": 1.73
+        }
+      ],
+      "feature_vector": [
+        7.284,
+        -0.209,
+        2.981,
+        -0.268,
+        -0.269,
+        1.73,
+        -0.092,
+        -0.101,
+        6.017,
+        0.329,
+        -0.107,
+        -0.126,
+        -0.086
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-28 01:00:00",
+          "geo": "IN",
+          "resource": "email",
+          "device": "U0261-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-28 01:03:00",
+          "geo": "IN",
+          "resource": "admin_console",
+          "device": "U0261-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-28 01:04:00",
+          "geo": "IN",
+          "resource": "cms",
+          "device": "U0261-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-28 01:12:00",
+          "geo": "IN",
+          "resource": "finance_db",
+          "device": "U0261-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-28 01:12:00",
+          "geo": "IN",
+          "resource": "crm",
+          "device": "U0261-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "IN",
+      "timestamp": "2025-06-28 01:00:00",
+      "narrative": "At Jun 28, 01:00, Desiree Tyler (Engineering) showed activity from India. The session touched admin_console, cms, crm. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Lateral Movement with a threat score of 71.",
+      "recommended_actions": [
+        "Isolate host",
+        "Revoke elevated access",
+        "Escalate to SOC"
+      ]
+    },
+    {
+      "incident_id": "INC-022",
+      "attack_id": "ATK223",
+      "entity_id": "U0208",
+      "entity_name": "Dr. William Warren",
+      "department": "Marketing",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 70,
+      "top_factors": [
+        {
+          "feature": "duration deviation",
+          "z": 6.68
+        },
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.57
+        }
+      ],
+      "feature_vector": [
+        0.476,
+        4.57,
+        1.64,
+        -0.268,
+        -0.269,
+        6.684,
+        -0.092,
+        5.886,
+        -0.166,
+        0.365,
+        4.614,
+        -0.126,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-08 16:00:00",
+          "geo": "IN",
+          "resource": "cms",
+          "device": "U0208-D1",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-08 16:09:00",
+          "geo": "US",
+          "resource": "prod_db",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "IN",
+      "timestamp": "2025-06-08 16:00:00",
+      "narrative": "At Jun 08, 16:00, Dr. William Warren (Marketing) showed activity from India. The session touched cms, prod_db. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 70.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-023",
+      "attack_id": "ATK185",
+      "entity_id": "U0261",
+      "entity_name": "Desiree Tyler",
+      "department": "Engineering",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 69,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.47
+        },
+        {
+          "feature": "device unseen",
+          "z": 1.73
+        }
+      ],
+      "feature_vector": [
+        1.083,
+        4.466,
+        0.28,
+        1.732,
+        1.723,
+        0.431,
+        -0.092,
+        5.886,
+        -0.166,
+        0.725,
+        4.614,
+        -0.126,
+        -0.184
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-25 10:00:00",
+          "geo": "IN",
+          "resource": "ci_pipeline",
+          "device": "U0261-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-25 10:07:00",
+          "geo": "US",
+          "resource": "prod_db",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        }
+      ],
+      "geo": "IN",
+      "timestamp": "2025-06-25 10:00:00",
+      "narrative": "At Jun 25, 10:00, Desiree Tyler (Engineering) showed activity from India using a device whose fingerprint did not match its history. The session touched ci_pipeline, prod_db. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 69.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-024",
+      "attack_id": "ATK068",
+      "entity_id": "U0099",
+      "entity_name": "Stephen Mckee",
+      "department": "Marketing",
+      "true_type": "credential_stuffing",
+      "type_label": "Credential Stuffing",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 66,
+      "top_factors": [
+        {
+          "feature": "auth failure",
+          "z": 10.92
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.14
+        },
+        {
+          "feature": "ip spread",
+          "z": 8.12
+        }
+      ],
+      "feature_vector": [
+        3.614,
+        9.14,
+        2.981,
+        3.732,
+        3.716,
+        2.634,
+        10.922,
+        4.352,
+        -0.166,
+        1.625,
+        9.336,
+        2.933,
+        8.119
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-21 20:04:12",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-21 20:08:31",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-21 20:04:12",
+      "narrative": "At Jun 21, 20:04, Stephen Mckee (Marketing) showed activity from Russia using a device whose fingerprint did not match its history. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Credential Stuffing with a threat score of 66.",
+      "recommended_actions": [
+        "Enforce MFA",
+        "Block source IP",
+        "Notify affected users"
+      ]
+    },
+    {
+      "incident_id": "INC-025",
+      "attack_id": "ATK201",
+      "entity_id": "U0321",
+      "entity_name": "Charles Shah",
+      "department": "Sales",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 66,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.49
+        },
+        {
+          "feature": "resource novelty",
+          "z": 1.17
+        }
+      ],
+      "feature_vector": [
+        -0.628,
+        4.486,
+        1.174,
+        -0.268,
+        -0.269,
+        -0.848,
+        -0.092,
+        5.886,
+        -0.166,
+        -0.175,
+        4.614,
+        -0.126,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-22 14:00:00",
+          "geo": "IN",
+          "resource": "calendar",
+          "device": "U0321-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-22 14:06:00",
+          "geo": "DE",
+          "resource": "prod_db",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "DE",
+      "timestamp": "2025-06-22 14:00:00",
+      "narrative": "At Jun 22, 14:00, Charles Shah (Sales) showed activity from India. The session touched calendar, prod_db. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 66.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-026",
+      "attack_id": "ATK764",
+      "entity_id": "U0127",
+      "entity_name": "Jason Powell",
+      "department": "HR",
+      "true_type": "lateral_movement",
+      "type_label": "Lateral Movement",
+      "n_events": 6,
+      "n_factors": 4,
+      "threat_score": 66,
+      "top_factors": [
+        {
+          "feature": "hour deviation",
+          "z": 8.93
+        },
+        {
+          "feature": "off hours",
+          "z": 6.02
+        },
+        {
+          "feature": "resource novelty",
+          "z": 2.95
+        },
+        {
+          "feature": "duration deviation",
+          "z": 1.76
+        }
+      ],
+      "feature_vector": [
+        8.933,
+        -0.209,
+        2.949,
+        -0.268,
+        -0.269,
+        1.762,
+        -0.092,
+        -0.101,
+        6.017,
+        1.145,
+        -0.107,
+        -0.126,
+        0.166
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-13 03:06:00",
+          "geo": "IN",
+          "resource": "vpn_gateway",
+          "device": "U0127-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-13 03:20:00",
+          "geo": "IN",
+          "resource": "payroll_api",
+          "device": "U0127-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-13 03:20:00",
+          "geo": "IN",
+          "resource": "erp_system",
+          "device": "U0127-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-13 03:21:00",
+          "geo": "IN",
+          "resource": "payroll_api",
+          "device": "U0127-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-13 03:24:00",
+          "geo": "IN",
+          "resource": "ci_pipeline",
+          "device": "U0127-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-13 03:24:00",
+          "geo": "IN",
+          "resource": "prod_db",
+          "device": "U0127-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "IN",
+      "timestamp": "2025-06-13 03:06:00",
+      "narrative": "At Jun 13, 03:06, Jason Powell (HR) showed activity from India. The session touched ci_pipeline, erp_system, payroll_api. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Lateral Movement with a threat score of 66.",
+      "recommended_actions": [
+        "Isolate host",
+        "Revoke elevated access",
+        "Escalate to SOC"
+      ]
+    },
+    {
+      "incident_id": "INC-027",
+      "attack_id": "ATK073",
+      "entity_id": "U0294",
+      "entity_name": "Ryan Gonzalez",
+      "department": "Marketing",
+      "true_type": "credential_stuffing",
+      "type_label": "Credential Stuffing",
+      "n_events": 12,
+      "n_factors": 4,
+      "threat_score": 65,
+      "top_factors": [
+        {
+          "feature": "auth failure",
+          "z": 10.92
+        },
+        {
+          "feature": "geo velocity",
+          "z": 9.92
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.0
+        }
+      ],
+      "feature_vector": [
+        0.731,
+        8.999,
+        2.855,
+        1.732,
+        1.723,
+        2.415,
+        10.922,
+        9.921,
+        -0.166,
+        1.625,
+        9.336,
+        3.188,
+        7.902
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-18 16:00:10",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 16:00:16",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 16:00:42",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 16:00:55",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 16:01:52",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 16:02:07",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 16:02:09",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 16:03:20",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 16:04:08",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 16:04:22",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 16:04:31",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 16:05:06",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-18 16:00:10",
+      "narrative": "At Jun 18, 16:00, Ryan Gonzalez (Marketing) showed activity from Russia using a device whose fingerprint did not match its history. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Credential Stuffing with a threat score of 65.",
+      "recommended_actions": [
+        "Enforce MFA",
+        "Block source IP",
+        "Notify affected users"
+      ]
+    },
+    {
+      "incident_id": "INC-028",
+      "attack_id": "ATK075",
+      "entity_id": "U0160",
+      "entity_name": "Paul Castaneda",
+      "department": "HR",
+      "true_type": "credential_stuffing",
+      "type_label": "Credential Stuffing",
+      "n_events": 3,
+      "n_factors": 4,
+      "threat_score": 65,
+      "top_factors": [
+        {
+          "feature": "auth failure",
+          "z": 10.92
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.08
+        },
+        {
+          "feature": "ip spread",
+          "z": 8.68
+        }
+      ],
+      "feature_vector": [
+        2.594,
+        9.079,
+        2.926,
+        -0.268,
+        -0.269,
+        2.649,
+        10.922,
+        3.642,
+        -0.166,
+        1.625,
+        9.336,
+        3.953,
+        8.68
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-21 07:00:44",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-21 07:01:34",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-21 07:07:48",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-21 07:00:44",
+      "narrative": "At Jun 21, 07:00, Paul Castaneda (HR) showed activity from Russia. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Credential Stuffing with a threat score of 65.",
+      "recommended_actions": [
+        "Enforce MFA",
+        "Block source IP",
+        "Notify affected users"
+      ]
+    },
+    {
+      "incident_id": "INC-029",
+      "attack_id": "ATK062",
+      "entity_id": "U0099",
+      "entity_name": "Stephen Mckee",
+      "department": "Marketing",
+      "true_type": "credential_stuffing",
+      "type_label": "Credential Stuffing",
+      "n_events": 14,
+      "n_factors": 4,
+      "threat_score": 64,
+      "top_factors": [
+        {
+          "feature": "auth failure",
+          "z": 10.92
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.01
+        },
+        {
+          "feature": "ip spread",
+          "z": 8.3
+        }
+      ],
+      "feature_vector": [
+        -0.151,
+        9.009,
+        2.866,
+        0.304,
+        0.015,
+        2.447,
+        10.922,
+        7.251,
+        -0.166,
+        1.625,
+        9.336,
+        3.151,
+        8.3
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-20 11:00:08",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-20 11:00:25",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-20 11:02:05",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-20 11:02:17",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-20 11:03:37",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-20 11:04:40",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-20 11:04:46",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-20 11:06:20",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-20 11:07:06",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-20 11:07:22",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-20 11:08:23",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-20 11:08:30",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-20 11:09:07",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-20 11:09:37",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-20 11:00:08",
+      "narrative": "At Jun 20, 11:00, Stephen Mckee (Marketing) showed activity from Russia using a device whose fingerprint did not match its history. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Credential Stuffing with a threat score of 64.",
+      "recommended_actions": [
+        "Enforce MFA",
+        "Block source IP",
+        "Notify affected users"
+      ]
+    },
+    {
+      "incident_id": "INC-030",
+      "attack_id": "ATK088",
+      "entity_id": "U0423",
+      "entity_name": "Mary Escobar",
+      "department": "Sales",
+      "true_type": "credential_stuffing",
+      "type_label": "Credential Stuffing",
+      "n_events": 10,
+      "n_factors": 4,
+      "threat_score": 64,
+      "top_factors": [
+        {
+          "feature": "auth failure",
+          "z": 10.92
+        },
+        {
+          "feature": "geo velocity",
+          "z": 10.4
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.12
+        }
+      ],
+      "feature_vector": [
+        -0.975,
+        9.12,
+        2.546,
+        2.132,
+        1.325,
+        2.561,
+        10.922,
+        10.397,
+        -0.166,
+        1.625,
+        9.336,
+        2.933,
+        7.642
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-24 13:00:25",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-24 13:01:14",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-24 13:01:16",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-24 13:02:20",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-24 13:02:22",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-24 13:02:29",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-24 13:03:52",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-24 13:04:50",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-24 13:07:44",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-24 13:08:50",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-24 13:00:25",
+      "narrative": "At Jun 24, 13:00, Mary Escobar (Sales) showed activity from Russia using a device whose fingerprint did not match its history. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Credential Stuffing with a threat score of 64.",
+      "recommended_actions": [
+        "Enforce MFA",
+        "Block source IP",
+        "Notify affected users"
+      ]
+    },
+    {
+      "incident_id": "INC-031",
+      "attack_id": "ATK489",
+      "entity_id": "U0099",
+      "entity_name": "Stephen Mckee",
+      "department": "Marketing",
+      "true_type": "device_spoofing",
+      "type_label": "Device Spoofing",
+      "n_events": 1,
+      "n_factors": 4,
+      "threat_score": 64,
+      "top_factors": [
+        {
+          "feature": "hour deviation",
+          "z": 3.75
+        },
+        {
+          "feature": "os mismatch",
+          "z": 3.72
+        },
+        {
+          "feature": "failure burst",
+          "z": 2.93
+        },
+        {
+          "feature": "duration deviation",
+          "z": 1.24
+        }
+      ],
+      "feature_vector": [
+        3.746,
+        -0.209,
+        -0.857,
+        -0.268,
+        3.716,
+        1.237,
+        -0.092,
+        -0.101,
+        -0.166,
+        -0.894,
+        -0.107,
+        2.933,
+        0.352
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-20 22:00:00",
+          "geo": "IN",
+          "resource": "email",
+          "device": "U0099-D0",
+          "os_mismatch": true,
+          "auth_success": true
+        }
+      ],
+      "geo": "IN",
+      "timestamp": "2025-06-20 22:00:00",
+      "narrative": "At Jun 20, 22:00, Stephen Mckee (Marketing) showed activity from India using a device whose fingerprint did not match its history. The session touched email. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Device Spoofing with a threat score of 64.",
+      "recommended_actions": [
+        "Quarantine device",
+        "Re-enroll device",
+        "Review access logs"
+      ]
+    },
+    {
+      "incident_id": "INC-032",
+      "attack_id": "ATK081",
+      "entity_id": "U0368",
+      "entity_name": "Renee Bruce",
+      "department": "Sales",
+      "true_type": "credential_stuffing",
+      "type_label": "Credential Stuffing",
+      "n_events": 4,
+      "n_factors": 4,
+      "threat_score": 63,
+      "top_factors": [
+        {
+          "feature": "auth failure",
+          "z": 10.92
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.13
+        },
+        {
+          "feature": "ip spread",
+          "z": 7.33
+        }
+      ],
+      "feature_vector": [
+        2.788,
+        9.131,
+        2.931,
+        2.732,
+        0.727,
+        2.594,
+        10.922,
+        4.757,
+        -0.166,
+        1.625,
+        9.336,
+        2.933,
+        7.334
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-19 06:07:30",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-19 06:08:43",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-19 06:08:48",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-19 06:09:32",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-19 06:07:30",
+      "narrative": "At Jun 19, 06:07, Renee Bruce (Sales) showed activity from Russia using a device whose fingerprint did not match its history. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Credential Stuffing with a threat score of 63.",
+      "recommended_actions": [
+        "Enforce MFA",
+        "Block source IP",
+        "Notify affected users"
+      ]
+    },
+    {
+      "incident_id": "INC-033",
+      "attack_id": "ATK083",
+      "entity_id": "U0113",
+      "entity_name": "Crystal Johnson",
+      "department": "Sales",
+      "true_type": "credential_stuffing",
+      "type_label": "Credential Stuffing",
+      "n_events": 9,
+      "n_factors": 4,
+      "threat_score": 63,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 10.89
+        },
+        {
+          "feature": "auth failure",
+          "z": 9.7
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.04
+        }
+      ],
+      "feature_vector": [
+        2.334,
+        9.044,
+        2.893,
+        2.399,
+        1.502,
+        2.473,
+        9.699,
+        10.894,
+        -0.166,
+        1.625,
+        9.336,
+        2.593,
+        7.902
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-17 20:00:04",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-17 20:01:58",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-17 20:02:12",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-17 20:02:49",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-17 20:05:50",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-17 20:07:01",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-17 20:07:15",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-17 20:08:39",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-17 20:09:38",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-17 20:00:04",
+      "narrative": "At Jun 17, 20:00, Crystal Johnson (Sales) showed activity from Russia using a device whose fingerprint did not match its history. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Credential Stuffing with a threat score of 63.",
+      "recommended_actions": [
+        "Enforce MFA",
+        "Block source IP",
+        "Notify affected users"
+      ]
+    },
+    {
+      "incident_id": "INC-034",
+      "attack_id": "ATK084",
+      "entity_id": "U0294",
+      "entity_name": "Ryan Gonzalez",
+      "department": "Marketing",
+      "true_type": "credential_stuffing",
+      "type_label": "Credential Stuffing",
+      "n_events": 7,
+      "n_factors": 4,
+      "threat_score": 63,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 10.86
+        },
+        {
+          "feature": "auth failure",
+          "z": 9.35
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.08
+        }
+      ],
+      "feature_vector": [
+        -0.087,
+        9.079,
+        2.9,
+        -0.268,
+        -0.269,
+        2.667,
+        9.349,
+        10.865,
+        -0.166,
+        1.625,
+        9.336,
+        2.496,
+        6.971
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-18 15:01:23",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 15:03:18",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 15:03:26",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-18 15:03:40",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 15:07:04",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 15:07:16",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 15:08:29",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-18 15:01:23",
+      "narrative": "At Jun 18, 15:01, Ryan Gonzalez (Marketing) showed activity from Russia. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Credential Stuffing with a threat score of 63.",
+      "recommended_actions": [
+        "Enforce MFA",
+        "Block source IP",
+        "Notify affected users"
+      ]
+    },
+    {
+      "incident_id": "INC-035",
+      "attack_id": "ATK840",
+      "entity_id": "U0279",
+      "entity_name": "Nathan Malone",
+      "department": "Sales",
+      "true_type": "low_and_slow",
+      "type_label": "Low-and-Slow Exfiltration",
+      "n_events": 3,
+      "n_factors": 4,
+      "threat_score": 63,
+      "top_factors": [
+        {
+          "feature": "off hours",
+          "z": 6.02
+        },
+        {
+          "feature": "resource novelty",
+          "z": 2.66
+        },
+        {
+          "feature": "hour deviation",
+          "z": 2.48
+        },
+        {
+          "feature": "duration deviation",
+          "z": 1.34
+        }
+      ],
+      "feature_vector": [
+        2.476,
+        0.007,
+        2.664,
+        -0.268,
+        -0.269,
+        1.343,
+        -0.092,
+        -0.101,
+        6.017,
+        1.265,
+        -0.107,
+        -0.126,
+        0.338
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-02 23:00:00",
+          "geo": "IN",
+          "resource": "prod_db",
+          "device": "U0279-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-03 02:00:00",
+          "geo": "IN",
+          "resource": "finance_db",
+          "device": "U0279-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-04 01:00:00",
+          "geo": "IN",
+          "resource": "contract_db",
+          "device": "U0279-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "IN",
+      "timestamp": "2025-06-02 23:00:00",
+      "narrative": "At Jun 02, 23:00, Nathan Malone (Sales) showed activity from India. The session touched contract_db, finance_db, prod_db. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Low-and-Slow Exfiltration with a threat score of 63.",
+      "recommended_actions": [
+        "Review data access",
+        "Enable DLP monitoring",
+        "Escalate to SOC"
+      ]
+    },
+    {
+      "incident_id": "INC-036",
+      "attack_id": "ATK089",
+      "entity_id": "U0113",
+      "entity_name": "Crystal Johnson",
+      "department": "Sales",
+      "true_type": "credential_stuffing",
+      "type_label": "Credential Stuffing",
+      "n_events": 13,
+      "n_factors": 4,
+      "threat_score": 62,
+      "top_factors": [
+        {
+          "feature": "auth failure",
+          "z": 10.92
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.11
+        },
+        {
+          "feature": "ip spread",
+          "z": 8.45
+        }
+      ],
+      "feature_vector": [
+        0.993,
+        9.11,
+        2.948,
+        0.963,
+        0.957,
+        2.722,
+        10.922,
+        5.4,
+        -0.166,
+        1.625,
+        9.336,
+        3.168,
+        8.451
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-18 09:00:33",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 09:01:19",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 09:01:59",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 09:02:34",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 09:02:41",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 09:02:56",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 09:03:14",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 09:05:13",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 09:05:46",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 09:06:42",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 09:07:20",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 09:08:25",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-18 09:09:28",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-18 09:00:33",
+      "narrative": "At Jun 18, 09:00, Crystal Johnson (Sales) showed activity from Russia using a device whose fingerprint did not match its history. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Credential Stuffing with a threat score of 62.",
+      "recommended_actions": [
+        "Enforce MFA",
+        "Block source IP",
+        "Notify affected users"
+      ]
+    },
+    {
+      "incident_id": "INC-037",
+      "attack_id": "ATK300",
+      "entity_id": "U0323",
+      "entity_name": "Brandy Chavez",
+      "department": "Sales",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 62,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.49
+        },
+        {
+          "feature": "resource novelty",
+          "z": 1.69
+        }
+      ],
+      "feature_vector": [
+        0.018,
+        4.491,
+        1.692,
+        -0.268,
+        -0.269,
+        0.531,
+        -0.092,
+        5.886,
+        -0.166,
+        0.365,
+        4.614,
+        -0.126,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-14 15:00:00",
+          "geo": "IN",
+          "resource": "email",
+          "device": "U0323-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-14 15:13:00",
+          "geo": "BR",
+          "resource": "payroll_api",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "BR",
+      "timestamp": "2025-06-14 15:00:00",
+      "narrative": "At Jun 14, 15:00, Brandy Chavez (Sales) showed activity from India. The session touched email, payroll_api. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 62.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-038",
+      "attack_id": "ATK067",
+      "entity_id": "U0275",
+      "entity_name": "Matthew Moore",
+      "department": "HR",
+      "true_type": "credential_stuffing",
+      "type_label": "Credential Stuffing",
+      "n_events": 8,
+      "n_factors": 4,
+      "threat_score": 61,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 11.71
+        },
+        {
+          "feature": "auth failure",
+          "z": 10.92
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.11
+        }
+      ],
+      "feature_vector": [
+        1.554,
+        9.106,
+        2.386,
+        1.732,
+        0.229,
+        2.673,
+        10.922,
+        11.711,
+        -0.166,
+        1.625,
+        9.336,
+        2.933,
+        6.544
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-09 17:02:33",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-09 17:02:36",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-09 17:04:22",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-09 17:04:23",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-09 17:05:22",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-09 17:05:38",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-09 17:06:49",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-09 17:07:42",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-09 17:02:33",
+      "narrative": "At Jun 09, 17:02, Matthew Moore (HR) showed activity from Russia using a device whose fingerprint did not match its history. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Credential Stuffing with a threat score of 61.",
+      "recommended_actions": [
+        "Enforce MFA",
+        "Block source IP",
+        "Notify affected users"
+      ]
+    },
+    {
+      "incident_id": "INC-039",
+      "attack_id": "ATK086",
+      "entity_id": "U0196",
+      "entity_name": "Daniel Salinas",
+      "department": "Sales",
+      "true_type": "credential_stuffing",
+      "type_label": "Credential Stuffing",
+      "n_events": 8,
+      "n_factors": 4,
+      "threat_score": 61,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 11.33
+        },
+        {
+          "feature": "auth failure",
+          "z": 10.92
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.11
+        }
+      ],
+      "feature_vector": [
+        3.006,
+        9.114,
+        2.961,
+        2.232,
+        1.225,
+        2.654,
+        10.922,
+        11.331,
+        -0.166,
+        1.625,
+        9.336,
+        2.933,
+        8.3
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-03 20:01:20",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-03 20:02:00",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-03 20:02:15",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-03 20:02:46",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-03 20:04:40",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-03 20:05:41",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-03 20:06:56",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-03 20:09:31",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-03 20:01:20",
+      "narrative": "At Jun 03, 20:01, Daniel Salinas (Sales) showed activity from Russia using a device whose fingerprint did not match its history. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Credential Stuffing with a threat score of 61.",
+      "recommended_actions": [
+        "Enforce MFA",
+        "Block source IP",
+        "Notify affected users"
+      ]
+    },
+    {
+      "incident_id": "INC-040",
+      "attack_id": "ATK318",
+      "entity_id": "U0279",
+      "entity_name": "Nathan Malone",
+      "department": "Sales",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 61,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.55
+        },
+        {
+          "feature": "resource novelty",
+          "z": 1.55
+        }
+      ],
+      "feature_vector": [
+        -0.011,
+        4.547,
+        1.554,
+        -0.268,
+        -0.269,
+        0.222,
+        -0.092,
+        5.886,
+        -0.166,
+        0.545,
+        4.614,
+        -0.126,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-04 10:00:00",
+          "geo": "IN",
+          "resource": "quote_tool",
+          "device": "U0279-D1",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-04 10:05:00",
+          "geo": "DE",
+          "resource": "finance_db",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "DE",
+      "timestamp": "2025-06-04 10:00:00",
+      "narrative": "At Jun 04, 10:00, Nathan Malone (Sales) showed activity from India. The session touched finance_db, quote_tool. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 61.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-041",
+      "attack_id": "ATK743",
+      "entity_id": "U0423",
+      "entity_name": "Mary Escobar",
+      "department": "Sales",
+      "true_type": "lateral_movement",
+      "type_label": "Lateral Movement",
+      "n_events": 8,
+      "n_factors": 4,
+      "threat_score": 61,
+      "top_factors": [
+        {
+          "feature": "off hours",
+          "z": 6.02
+        },
+        {
+          "feature": "resource novelty",
+          "z": 2.98
+        },
+        {
+          "feature": "hour deviation",
+          "z": 2.63
+        },
+        {
+          "feature": "duration deviation",
+          "z": 2.24
+        }
+      ],
+      "feature_vector": [
+        2.633,
+        -0.141,
+        2.981,
+        -0.268,
+        -0.269,
+        2.244,
+        -0.092,
+        -0.101,
+        6.017,
+        0.275,
+        -0.107,
+        -0.126,
+        0.2
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-23 04:02:00",
+          "geo": "IN",
+          "resource": "prod_db",
+          "device": "U0423-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-23 04:04:00",
+          "geo": "IN",
+          "resource": "hr_portal",
+          "device": "U0423-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-23 04:06:00",
+          "geo": "IN",
+          "resource": "server_ssh",
+          "device": "U0423-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-23 04:15:00",
+          "geo": "IN",
+          "resource": "expense_portal",
+          "device": "U0423-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-23 04:16:00",
+          "geo": "IN",
+          "resource": "vpn_gateway",
+          "device": "U0423-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-23 04:21:00",
+          "geo": "IN",
+          "resource": "quote_tool",
+          "device": "U0423-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-23 04:24:00",
+          "geo": "IN",
+          "resource": "staging_env",
+          "device": "U0423-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-23 04:30:00",
+          "geo": "IN",
+          "resource": "analytics",
+          "device": "U0423-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "IN",
+      "timestamp": "2025-06-23 04:02:00",
+      "narrative": "At Jun 23, 04:02, Mary Escobar (Sales) showed activity from India. The session touched analytics, expense_portal, hr_portal. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Lateral Movement with a threat score of 61.",
+      "recommended_actions": [
+        "Isolate host",
+        "Revoke elevated access",
+        "Escalate to SOC"
+      ]
+    },
+    {
+      "incident_id": "INC-042",
+      "attack_id": "ATK069",
+      "entity_id": "U0443",
+      "entity_name": "Holly Valentine",
+      "department": "IT_Admin",
+      "true_type": "credential_stuffing",
+      "type_label": "Credential Stuffing",
+      "n_events": 3,
+      "n_factors": 4,
+      "threat_score": 60,
+      "top_factors": [
+        {
+          "feature": "auth failure",
+          "z": 10.92
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.12
+        },
+        {
+          "feature": "ip spread",
+          "z": 6.54
+        }
+      ],
+      "feature_vector": [
+        0.619,
+        9.123,
+        2.957,
+        1.066,
+        -0.269,
+        2.85,
+        10.922,
+        5.967,
+        -0.166,
+        1.625,
+        9.336,
+        2.933,
+        6.544
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-08 16:05:25",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-08 16:06:20",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-08 16:07:51",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-08 16:05:25",
+      "narrative": "At Jun 08, 16:05, Holly Valentine (IT_Admin) showed activity from Russia. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Credential Stuffing with a threat score of 60.",
+      "recommended_actions": [
+        "Enforce MFA",
+        "Block source IP",
+        "Notify affected users"
+      ]
+    },
+    {
+      "incident_id": "INC-043",
+      "attack_id": "ATK076",
+      "entity_id": "U0488",
+      "entity_name": "Bobby Guerrero",
+      "department": "IT_Admin",
+      "true_type": "credential_stuffing",
+      "type_label": "Credential Stuffing",
+      "n_events": 9,
+      "n_factors": 4,
+      "threat_score": 60,
+      "top_factors": [
+        {
+          "feature": "auth failure",
+          "z": 9.7
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.11
+        },
+        {
+          "feature": "ip spread",
+          "z": 8.58
+        }
+      ],
+      "feature_vector": [
+        2.702,
+        9.108,
+        2.952,
+        0.621,
+        0.174,
+        2.763,
+        9.699,
+        4.639,
+        6.017,
+        1.625,
+        9.336,
+        2.593,
+        8.576
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-26 05:01:21",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-26 05:02:49",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-26 05:05:46",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-26 05:05:56",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-26 05:06:23",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-26 05:06:33",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-26 05:06:48",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-26 05:08:06",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": false
+        },
+        {
+          "timestamp": "2025-06-26 05:09:32",
+          "geo": "RU",
+          "resource": "identity_provider",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "RU",
+      "timestamp": "2025-06-26 05:01:21",
+      "narrative": "At Jun 26, 05:01, Bobby Guerrero (IT_Admin) showed activity from Russia using a device whose fingerprint did not match its history. The session touched identity_provider. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Credential Stuffing with a threat score of 60.",
+      "recommended_actions": [
+        "Enforce MFA",
+        "Block source IP",
+        "Notify affected users"
+      ]
+    },
+    {
+      "incident_id": "INC-044",
+      "attack_id": "ATK119",
+      "entity_id": "U0008",
+      "entity_name": "Gabrielle Davis",
+      "department": "Engineering",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 59,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.47
+        },
+        {
+          "feature": "resource novelty",
+          "z": 1.83
+        }
+      ],
+      "feature_vector": [
+        -0.816,
+        4.466,
+        1.829,
+        1.732,
+        -0.269,
+        0.393,
+        -0.092,
+        5.886,
+        -0.166,
+        1.445,
+        4.614,
+        -0.126,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-26 13:00:00",
+          "geo": "IN",
+          "resource": "prod_db",
+          "device": "U0008-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-26 13:08:00",
+          "geo": "DE",
+          "resource": "payroll_api",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "DE",
+      "timestamp": "2025-06-26 13:00:00",
+      "narrative": "At Jun 26, 13:00, Gabrielle Davis (Engineering) showed activity from India. The session touched payroll_api, prod_db. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 59.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-045",
+      "attack_id": "ATK164",
+      "entity_id": "U0260",
+      "entity_name": "Katie Suarez",
+      "department": "Legal",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 59,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.5
+        },
+        {
+          "feature": "resource novelty",
+          "z": 1.32
+        }
+      ],
+      "feature_vector": [
+        0.332,
+        4.503,
+        1.322,
+        -0.268,
+        -0.269,
+        0.32,
+        -0.092,
+        5.886,
+        -0.166,
+        1.265,
+        4.614,
+        -0.126,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-26 09:00:00",
+          "geo": "IN",
+          "resource": "contract_db",
+          "device": "U0260-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-26 09:14:00",
+          "geo": "DE",
+          "resource": "payroll_api",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "DE",
+      "timestamp": "2025-06-26 09:00:00",
+      "narrative": "At Jun 26, 09:00, Katie Suarez (Legal) showed activity from India. The session touched contract_db, payroll_api. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 59.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-046",
+      "attack_id": "ATK186",
+      "entity_id": "U0084",
+      "entity_name": "Zachary Ferrell",
+      "department": "Legal",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 59,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.5
+        },
+        {
+          "feature": "resource novelty",
+          "z": 1.24
+        }
+      ],
+      "feature_vector": [
+        -0.418,
+        4.5,
+        1.243,
+        -0.268,
+        -0.269,
+        1.018,
+        -0.092,
+        5.886,
+        -0.166,
+        1.085,
+        4.614,
+        -0.126,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-11 13:00:00",
+          "geo": "IN",
+          "resource": "contract_db",
+          "device": "U0084-D1",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-11 13:18:00",
+          "geo": "BR",
+          "resource": "prod_db",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "BR",
+      "timestamp": "2025-06-11 13:00:00",
+      "narrative": "At Jun 11, 13:00, Zachary Ferrell (Legal) showed activity from India. The session touched contract_db, prod_db. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 59.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-047",
+      "attack_id": "ATK256",
+      "entity_id": "U0451",
+      "entity_name": "Courtney Hayes",
+      "department": "Sales",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 59,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.52
+        },
+        {
+          "feature": "device unseen",
+          "z": 3.73
+        }
+      ],
+      "feature_vector": [
+        0.039,
+        4.517,
+        1.994,
+        3.732,
+        3.716,
+        0.119,
+        -0.092,
+        5.886,
+        -0.166,
+        0.725,
+        4.614,
+        -0.126,
+        -0.184
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-04 16:00:00",
+          "geo": "IN",
+          "resource": "crm",
+          "device": "U0451-D0",
+          "os_mismatch": true,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-04 16:16:00",
+          "geo": "US",
+          "resource": "payroll_api",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        }
+      ],
+      "geo": "IN",
+      "timestamp": "2025-06-04 16:00:00",
+      "narrative": "At Jun 04, 16:00, Courtney Hayes (Sales) showed activity from India using a device whose fingerprint did not match its history. The session touched crm, payroll_api. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 59.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-048",
+      "attack_id": "ATK310",
+      "entity_id": "U0435",
+      "entity_name": "Sophia Johnson",
+      "department": "Engineering",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 59,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.52
+        },
+        {
+          "feature": "device unseen",
+          "z": 3.73
+        }
+      ],
+      "feature_vector": [
+        1.521,
+        4.521,
+        2.092,
+        3.732,
+        3.716,
+        -0.002,
+        -0.092,
+        5.886,
+        -0.166,
+        0.905,
+        4.614,
+        -0.126,
+        0.331
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-12 08:00:00",
+          "geo": "IN",
+          "resource": "git_repo",
+          "device": "U0435-D0",
+          "os_mismatch": true,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-12 08:15:00",
+          "geo": "US",
+          "resource": "finance_db",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        }
+      ],
+      "geo": "IN",
+      "timestamp": "2025-06-12 08:00:00",
+      "narrative": "At Jun 12, 08:00, Sophia Johnson (Engineering) showed activity from India using a device whose fingerprint did not match its history. The session touched finance_db, git_repo. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 59.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-049",
+      "attack_id": "ATK104",
+      "entity_id": "U0432",
+      "entity_name": "Travis Tucker",
+      "department": "Sales",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 57,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.47
+        },
+        {
+          "feature": "resource novelty",
+          "z": 1.44
+        }
+      ],
+      "feature_vector": [
+        -0.304,
+        4.466,
+        1.445,
+        -0.268,
+        -0.269,
+        0.598,
+        -0.092,
+        5.886,
+        -0.166,
+        0.725,
+        4.614,
+        -0.126,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-12 15:00:00",
+          "geo": "IN",
+          "resource": "crm",
+          "device": "U0432-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-12 15:12:00",
+          "geo": "RU",
+          "resource": "payroll_api",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "IN",
+      "timestamp": "2025-06-12 15:00:00",
+      "narrative": "At Jun 12, 15:00, Travis Tucker (Sales) showed activity from India. The session touched crm, payroll_api. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 57.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-050",
+      "attack_id": "ATK225",
+      "entity_id": "U0042",
+      "entity_name": "Sherry Decker",
+      "department": "Marketing",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 57,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.62
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "resource novelty",
+          "z": 1.14
+        }
+      ],
+      "feature_vector": [
+        0.738,
+        4.615,
+        1.137,
+        -0.268,
+        -0.269,
+        0.819,
+        -0.092,
+        5.886,
+        -0.166,
+        0.365,
+        4.614,
+        -0.126,
+        -0.184
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-18 09:00:00",
+          "geo": "IN",
+          "resource": "email",
+          "device": "U0042-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-18 09:13:00",
+          "geo": "DE",
+          "resource": "finance_db",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "DE",
+      "timestamp": "2025-06-18 09:00:00",
+      "narrative": "At Jun 18, 09:00, Sherry Decker (Marketing) showed activity from India. The session touched email, finance_db. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 57.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-051",
+      "attack_id": "ATK258",
+      "entity_id": "U0419",
+      "entity_name": "Jake Campbell",
+      "department": "Sales",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 57,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.5
+        },
+        {
+          "feature": "duration deviation",
+          "z": 1.2
+        }
+      ],
+      "feature_vector": [
+        0.86,
+        4.499,
+        0.99,
+        -0.268,
+        -0.269,
+        1.2,
+        -0.092,
+        5.886,
+        -0.166,
+        -0.175,
+        4.614,
+        -0.126,
+        -0.184
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-25 09:00:00",
+          "geo": "IN",
+          "resource": "calendar",
+          "device": "U0419-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-25 09:09:00",
+          "geo": "DE",
+          "resource": "prod_db",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "DE",
+      "timestamp": "2025-06-25 09:00:00",
+      "narrative": "At Jun 25, 09:00, Jake Campbell (Sales) showed activity from India. The session touched calendar, prod_db. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 57.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-052",
+      "attack_id": "ATK228",
+      "entity_id": "U0260",
+      "entity_name": "Katie Suarez",
+      "department": "Legal",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 56,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.5
+        },
+        {
+          "feature": "resource novelty",
+          "z": 1.32
+        }
+      ],
+      "feature_vector": [
+        -0.472,
+        4.503,
+        1.322,
+        -0.268,
+        -0.269,
+        0.32,
+        -0.092,
+        5.886,
+        -0.166,
+        1.085,
+        4.614,
+        -0.126,
+        0.331
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-05 14:00:00",
+          "geo": "IN",
+          "resource": "contract_db",
+          "device": "U0260-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-05 14:19:00",
+          "geo": "RU",
+          "resource": "prod_db",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "IN",
+      "timestamp": "2025-06-05 14:00:00",
+      "narrative": "At Jun 05, 14:00, Katie Suarez (Legal) showed activity from India. The session touched contract_db, prod_db. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 56.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-053",
+      "attack_id": "ATK259",
+      "entity_id": "U0011",
+      "entity_name": "Jamie Arnold",
+      "department": "Sales",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 56,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.47
+        },
+        {
+          "feature": "device unseen",
+          "z": 1.73
+        }
+      ],
+      "feature_vector": [
+        -0.439,
+        4.466,
+        1.57,
+        1.732,
+        1.723,
+        1.108,
+        -0.092,
+        5.886,
+        -0.166,
+        0.545,
+        4.614,
+        -0.126,
+        -0.184
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-10 11:00:00",
+          "geo": "IN",
+          "resource": "quote_tool",
+          "device": "U0011-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-10 11:04:00",
+          "geo": "RU",
+          "resource": "payroll_api",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        }
+      ],
+      "geo": "IN",
+      "timestamp": "2025-06-10 11:00:00",
+      "narrative": "At Jun 10, 11:00, Jamie Arnold (Sales) showed activity from India using a device whose fingerprint did not match its history. The session touched payroll_api, quote_tool. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 56.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-054",
+      "attack_id": "ATK122",
+      "entity_id": "U0047",
+      "entity_name": "Shane Henderson",
+      "department": "Legal",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 2,
+      "n_factors": 4,
+      "threat_score": 55,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 5.89
+        },
+        {
+          "feature": "foreign geo",
+          "z": 4.61
+        },
+        {
+          "feature": "geo novelty",
+          "z": 4.5
+        },
+        {
+          "feature": "duration deviation",
+          "z": 0.87
+        }
+      ],
+      "feature_vector": [
+        -0.025,
+        4.501,
+        0.815,
+        -0.268,
+        -0.269,
+        0.87,
+        -0.092,
+        5.886,
+        -0.166,
+        0.725,
+        4.614,
+        -0.126,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-24 09:00:00",
+          "geo": "IN",
+          "resource": "compliance_portal",
+          "device": "U0047-D0",
+          "os_mismatch": false,
+          "auth_success": true
+        },
+        {
+          "timestamp": "2025-06-24 09:18:00",
+          "geo": "DE",
+          "resource": "prod_db",
+          "device": "unknown",
+          "os_mismatch": false,
+          "auth_success": true
+        }
+      ],
+      "geo": "DE",
+      "timestamp": "2025-06-24 09:00:00",
+      "narrative": "At Jun 24, 09:00, Shane Henderson (Legal) showed activity from India. The session touched compliance_portal, prod_db. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 55.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    },
+    {
+      "incident_id": "INC-055",
+      "attack_id": "ATK130",
+      "entity_id": "U0022",
+      "entity_name": "Ethan Adams",
+      "department": "Finance",
+      "true_type": "impossible_travel",
+      "type_label": "Impossible Travel",
+      "n_events": 1,
+      "n_factors": 4,
+      "threat_score": 55,
+      "top_factors": [
+        {
+          "feature": "geo velocity",
+          "z": 11.87
+        },
+        {
+          "feature": "foreign geo",
+          "z": 9.34
+        },
+        {
+          "feature": "geo novelty",
+          "z": 9.14
+        },
+        {
+          "feature": "device unseen",
+          "z": 3.73
+        }
+      ],
+      "feature_vector": [
+        3.016,
+        9.14,
+        2.981,
+        3.732,
+        3.716,
+        0.897,
+        -0.092,
+        11.872,
+        -0.166,
+        1.265,
+        9.336,
+        -0.126,
+        -0.721
+      ],
+      "events": [
+        {
+          "timestamp": "2025-06-27 08:10:00",
+          "geo": "BR",
+          "resource": "prod_db",
+          "device": "unknown",
+          "os_mismatch": true,
+          "auth_success": true
+        }
+      ],
+      "geo": "BR",
+      "timestamp": "2025-06-27 08:10:00",
+      "narrative": "At Jun 27, 08:10, Ethan Adams (Finance) showed activity from Brazil using a device whose fingerprint did not match its history. The session touched prod_db. Behaviour diverged from the entity's established Behaviour DNA across 4 signals. Classified as Impossible Travel with a threat score of 55.",
+      "recommended_actions": [
+        "Lock account",
+        "Revoke active sessions",
+        "Verify with user"
+      ]
+    }
+  ],
+  "correlations": {
+    "INC-001": [
+      {
+        "incident_id": "INC-011",
+        "similarity": 0.987,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-015",
+        "similarity": 0.966,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-008",
+        "similarity": 0.951,
+        "type": "Brute Force"
+      }
+    ],
+    "INC-002": [
+      {
+        "incident_id": "INC-004",
+        "similarity": 0.995,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-003",
+        "similarity": 0.993,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-006",
+        "similarity": 0.993,
+        "type": "Brute Force"
+      }
+    ],
+    "INC-003": [
+      {
+        "incident_id": "INC-005",
+        "similarity": 0.994,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-002",
+        "similarity": 0.993,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-004",
+        "similarity": 0.992,
+        "type": "Brute Force"
+      }
+    ],
+    "INC-004": [
+      {
+        "incident_id": "INC-002",
+        "similarity": 0.995,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-003",
+        "similarity": 0.992,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-006",
+        "similarity": 0.989,
+        "type": "Brute Force"
+      }
+    ],
+    "INC-005": [
+      {
+        "incident_id": "INC-003",
+        "similarity": 0.994,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-002",
+        "similarity": 0.989,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-006",
+        "similarity": 0.985,
+        "type": "Brute Force"
+      }
+    ],
+    "INC-006": [
+      {
+        "incident_id": "INC-002",
+        "similarity": 0.993,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-004",
+        "similarity": 0.989,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-005",
+        "similarity": 0.985,
+        "type": "Brute Force"
+      }
+    ],
+    "INC-007": [
+      {
+        "incident_id": "INC-013",
+        "similarity": 0.997,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-014",
+        "similarity": 0.996,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-010",
+        "similarity": 0.99,
+        "type": "Brute Force"
+      }
+    ],
+    "INC-008": [
+      {
+        "incident_id": "INC-015",
+        "similarity": 0.989,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-011",
+        "similarity": 0.969,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-010",
+        "similarity": 0.961,
+        "type": "Brute Force"
+      }
+    ],
+    "INC-009": [
+      {
+        "incident_id": "INC-003",
+        "similarity": 0.982,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-004",
+        "similarity": 0.981,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-010",
+        "similarity": 0.981,
+        "type": "Brute Force"
+      }
+    ],
+    "INC-010": [
+      {
+        "incident_id": "INC-012",
+        "similarity": 0.993,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-014",
+        "similarity": 0.993,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-007",
+        "similarity": 0.99,
+        "type": "Brute Force"
+      }
+    ],
+    "INC-011": [
+      {
+        "incident_id": "INC-001",
+        "similarity": 0.987,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-008",
+        "similarity": 0.969,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-003",
+        "similarity": 0.962,
+        "type": "Brute Force"
+      }
+    ],
+    "INC-012": [
+      {
+        "incident_id": "INC-014",
+        "similarity": 0.995,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-010",
+        "similarity": 0.993,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-013",
+        "similarity": 0.99,
+        "type": "Brute Force"
+      }
+    ],
+    "INC-013": [
+      {
+        "incident_id": "INC-007",
+        "similarity": 0.997,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-014",
+        "similarity": 0.997,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-012",
+        "similarity": 0.99,
+        "type": "Brute Force"
+      }
+    ],
+    "INC-014": [
+      {
+        "incident_id": "INC-013",
+        "similarity": 0.997,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-007",
+        "similarity": 0.996,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-012",
+        "similarity": 0.995,
+        "type": "Brute Force"
+      }
+    ],
+    "INC-015": [
+      {
+        "incident_id": "INC-008",
+        "similarity": 0.989,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-001",
+        "similarity": 0.966,
+        "type": "Brute Force"
+      },
+      {
+        "incident_id": "INC-011",
+        "similarity": 0.961,
+        "type": "Brute Force"
+      }
+    ],
+    "INC-016": [
+      {
+        "incident_id": "INC-017",
+        "similarity": 0.954,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-054",
+        "similarity": 0.952,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-044",
+        "similarity": 0.944,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-017": [
+      {
+        "incident_id": "INC-044",
+        "similarity": 0.961,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-016",
+        "similarity": 0.954,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-046",
+        "similarity": 0.954,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-018": [
+      {
+        "incident_id": "INC-040",
+        "similarity": 0.942,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-045",
+        "similarity": 0.941,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-052",
+        "similarity": 0.941,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-019": [
+      {
+        "incident_id": "INC-053",
+        "similarity": 0.991,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-055",
+        "similarity": 0.975,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-023",
+        "similarity": 0.974,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-020": [
+      {
+        "incident_id": "INC-022",
+        "similarity": 0.997,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-051",
+        "similarity": 0.864,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-046",
+        "similarity": 0.859,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-021": [
+      {
+        "incident_id": "INC-026",
+        "similarity": 0.992,
+        "type": "Lateral Movement"
+      },
+      {
+        "incident_id": "INC-041",
+        "similarity": 0.897,
+        "type": "Lateral Movement"
+      },
+      {
+        "incident_id": "INC-035",
+        "similarity": 0.886,
+        "type": "Low-and-Slow Exfiltration"
+      }
+    ],
+    "INC-022": [
+      {
+        "incident_id": "INC-020",
+        "similarity": 0.997,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-051",
+        "similarity": 0.869,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-046",
+        "similarity": 0.857,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-023": [
+      {
+        "incident_id": "INC-055",
+        "similarity": 0.991,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-019",
+        "similarity": 0.974,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-053",
+        "similarity": 0.974,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-024": [
+      {
+        "incident_id": "INC-032",
+        "similarity": 0.987,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-036",
+        "similarity": 0.973,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-028",
+        "similarity": 0.96,
+        "type": "Credential Stuffing"
+      }
+    ],
+    "INC-025": [
+      {
+        "incident_id": "INC-040",
+        "similarity": 0.986,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-037",
+        "similarity": 0.982,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-049",
+        "similarity": 0.981,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-026": [
+      {
+        "incident_id": "INC-021",
+        "similarity": 0.992,
+        "type": "Lateral Movement"
+      },
+      {
+        "incident_id": "INC-041",
+        "similarity": 0.848,
+        "type": "Lateral Movement"
+      },
+      {
+        "incident_id": "INC-035",
+        "similarity": 0.847,
+        "type": "Low-and-Slow Exfiltration"
+      }
+    ],
+    "INC-027": [
+      {
+        "incident_id": "INC-030",
+        "similarity": 0.996,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-033",
+        "similarity": 0.994,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-039",
+        "similarity": 0.993,
+        "type": "Credential Stuffing"
+      }
+    ],
+    "INC-028": [
+      {
+        "incident_id": "INC-036",
+        "similarity": 0.989,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-032",
+        "similarity": 0.983,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-042",
+        "similarity": 0.98,
+        "type": "Credential Stuffing"
+      }
+    ],
+    "INC-029": [
+      {
+        "incident_id": "INC-042",
+        "similarity": 0.994,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-036",
+        "similarity": 0.993,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-027",
+        "similarity": 0.987,
+        "type": "Credential Stuffing"
+      }
+    ],
+    "INC-030": [
+      {
+        "incident_id": "INC-027",
+        "similarity": 0.996,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-038",
+        "similarity": 0.989,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-034",
+        "similarity": 0.987,
+        "type": "Credential Stuffing"
+      }
+    ],
+    "INC-031": [],
+    "INC-032": [
+      {
+        "incident_id": "INC-036",
+        "similarity": 0.99,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-024",
+        "similarity": 0.987,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-042",
+        "similarity": 0.987,
+        "type": "Credential Stuffing"
+      }
+    ],
+    "INC-033": [
+      {
+        "incident_id": "INC-039",
+        "similarity": 0.999,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-027",
+        "similarity": 0.994,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-038",
+        "similarity": 0.993,
+        "type": "Credential Stuffing"
+      }
+    ],
+    "INC-034": [
+      {
+        "incident_id": "INC-038",
+        "similarity": 0.99,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-030",
+        "similarity": 0.987,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-027",
+        "similarity": 0.986,
+        "type": "Credential Stuffing"
+      }
+    ],
+    "INC-035": [
+      {
+        "incident_id": "INC-041",
+        "similarity": 0.983,
+        "type": "Lateral Movement"
+      },
+      {
+        "incident_id": "INC-021",
+        "similarity": 0.886,
+        "type": "Lateral Movement"
+      },
+      {
+        "incident_id": "INC-026",
+        "similarity": 0.847,
+        "type": "Lateral Movement"
+      }
+    ],
+    "INC-036": [
+      {
+        "incident_id": "INC-029",
+        "similarity": 0.993,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-042",
+        "similarity": 0.993,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-032",
+        "similarity": 0.99,
+        "type": "Credential Stuffing"
+      }
+    ],
+    "INC-037": [
+      {
+        "incident_id": "INC-040",
+        "similarity": 0.999,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-049",
+        "similarity": 0.998,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-054",
+        "similarity": 0.994,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-038": [
+      {
+        "incident_id": "INC-039",
+        "similarity": 0.994,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-033",
+        "similarity": 0.993,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-027",
+        "similarity": 0.992,
+        "type": "Credential Stuffing"
+      }
+    ],
+    "INC-039": [
+      {
+        "incident_id": "INC-033",
+        "similarity": 0.999,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-038",
+        "similarity": 0.994,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-027",
+        "similarity": 0.993,
+        "type": "Credential Stuffing"
+      }
+    ],
+    "INC-040": [
+      {
+        "incident_id": "INC-037",
+        "similarity": 0.999,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-049",
+        "similarity": 0.998,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-045",
+        "similarity": 0.996,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-041": [
+      {
+        "incident_id": "INC-035",
+        "similarity": 0.983,
+        "type": "Low-and-Slow Exfiltration"
+      },
+      {
+        "incident_id": "INC-021",
+        "similarity": 0.897,
+        "type": "Lateral Movement"
+      },
+      {
+        "incident_id": "INC-026",
+        "similarity": 0.848,
+        "type": "Lateral Movement"
+      }
+    ],
+    "INC-042": [
+      {
+        "incident_id": "INC-029",
+        "similarity": 0.994,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-036",
+        "similarity": 0.993,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-032",
+        "similarity": 0.987,
+        "type": "Credential Stuffing"
+      }
+    ],
+    "INC-043": [
+      {
+        "incident_id": "INC-028",
+        "similarity": 0.949,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-036",
+        "similarity": 0.948,
+        "type": "Credential Stuffing"
+      },
+      {
+        "incident_id": "INC-032",
+        "similarity": 0.945,
+        "type": "Credential Stuffing"
+      }
+    ],
+    "INC-044": [
+      {
+        "incident_id": "INC-049",
+        "similarity": 0.971,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-046",
+        "similarity": 0.97,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-019",
+        "similarity": 0.969,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-045": [
+      {
+        "incident_id": "INC-040",
+        "similarity": 0.996,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-049",
+        "similarity": 0.995,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-054",
+        "similarity": 0.994,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-046": [
+      {
+        "incident_id": "INC-049",
+        "similarity": 0.998,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-054",
+        "similarity": 0.997,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-037",
+        "similarity": 0.993,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-047": [
+      {
+        "incident_id": "INC-048",
+        "similarity": 0.989,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-019",
+        "similarity": 0.959,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-053",
+        "similarity": 0.958,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-048": [
+      {
+        "incident_id": "INC-047",
+        "similarity": 0.989,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-055",
+        "similarity": 0.966,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-023",
+        "similarity": 0.949,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-049": [
+      {
+        "incident_id": "INC-037",
+        "similarity": 0.998,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-040",
+        "similarity": 0.998,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-046",
+        "similarity": 0.998,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-050": [
+      {
+        "incident_id": "INC-051",
+        "similarity": 0.997,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-054",
+        "similarity": 0.993,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-037",
+        "similarity": 0.992,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-051": [
+      {
+        "incident_id": "INC-050",
+        "similarity": 0.997,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-054",
+        "similarity": 0.987,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-037",
+        "similarity": 0.986,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-052": [
+      {
+        "incident_id": "INC-049",
+        "similarity": 0.991,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-040",
+        "similarity": 0.99,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-046",
+        "similarity": 0.99,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-053": [
+      {
+        "incident_id": "INC-019",
+        "similarity": 0.991,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-055",
+        "similarity": 0.976,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-023",
+        "similarity": 0.974,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-054": [
+      {
+        "incident_id": "INC-046",
+        "similarity": 0.997,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-049",
+        "similarity": 0.997,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-037",
+        "similarity": 0.994,
+        "type": "Impossible Travel"
+      }
+    ],
+    "INC-055": [
+      {
+        "incident_id": "INC-023",
+        "similarity": 0.991,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-053",
+        "similarity": 0.976,
+        "type": "Impossible Travel"
+      },
+      {
+        "incident_id": "INC-019",
+        "similarity": 0.975,
+        "type": "Impossible Travel"
+      }
+    ]
+  },
+  "dashboard": {
+    "by_type": {
+      "Lateral Movement": 335,
+      "Brute Force": 220,
+      "Credential Stuffing": 185,
+      "Impossible Travel": 148,
+      "Low-and-Slow Exfiltration": 122,
+      "Device Spoofing": 107,
+      "Insider Drift (benign)": 41
+    },
+    "by_department": {
+      "Legal": 7,
+      "Engineering": 11,
+      "Finance": 3,
+      "Sales": 16,
+      "Marketing": 11,
+      "HR": 5,
+      "IT_Admin": 2
+    },
+    "org_trust": 84,
+    "critical_incidents": 11,
+    "total_incidents": 55
+  },
+  "injection_scenarios": {
+    "brute_force": "INC-001",
+    "impossible_travel": "INC-016",
+    "lateral_movement": "INC-021",
+    "credential_stuffing": "INC-024",
+    "device_spoofing": "INC-031",
+    "low_and_slow": "INC-035"
+  },
+  "attack_types": [
+    [
+      "brute_force",
+      "Brute Force"
+    ],
+    [
+      "credential_stuffing",
+      "Credential Stuffing"
+    ],
+    [
+      "impossible_travel",
+      "Impossible Travel"
+    ],
+    [
+      "device_spoofing",
+      "Device Spoofing"
+    ],
+    [
+      "lateral_movement",
+      "Lateral Movement"
+    ],
+    [
+      "low_and_slow",
+      "Low-and-Slow Exfiltration"
+    ],
+    [
+      "insider_drift",
+      "Insider Drift (benign)"
+    ]
+  ]
+}

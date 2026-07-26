@@ -1,0 +1,140 @@
+{
+  "detector": "LSTM autoencoder (per-event via window-max aggregation)",
+  "detection": {
+    "roc_auc": 0.891,
+    "pr_auc": 0.354,
+    "positive_rate": 0.0274,
+    "top1_alert_budget": {
+      "k": 422,
+      "precision": 0.557,
+      "recall": 0.203,
+      "fpr": 0.0046,
+      "tp": 235,
+      "fp": 187,
+      "fn": 923,
+      "tn": 40880
+    },
+    "coldstart_roc_auc": 0.876,
+    "coldstart_events": 2643,
+    "insider_drift_flag_rate": 0.0
+  },
+  "classification": {
+    "per_type": [
+      {
+        "attack": "brute_force",
+        "precision": 1.0,
+        "recall": 0.995,
+        "f1": 0.998,
+        "support": 220
+      },
+      {
+        "attack": "credential_stuffing",
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 185
+      },
+      {
+        "attack": "impossible_travel",
+        "precision": 0.821,
+        "recall": 0.777,
+        "f1": 0.799,
+        "support": 148
+      },
+      {
+        "attack": "device_spoofing",
+        "precision": 0.686,
+        "recall": 0.673,
+        "f1": 0.679,
+        "support": 107
+      },
+      {
+        "attack": "lateral_movement",
+        "precision": 0.804,
+        "recall": 0.979,
+        "f1": 0.883,
+        "support": 335
+      },
+      {
+        "attack": "low_and_slow",
+        "precision": 0.85,
+        "recall": 0.418,
+        "f1": 0.56,
+        "support": 122
+      }
+    ],
+    "confusion_matrix": [
+      [
+        219,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        185,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        115,
+        33,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        24,
+        72,
+        9,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        328,
+        7
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        71,
+        51
+      ]
+    ],
+    "labels": [
+      "brute_force",
+      "credential_stuffing",
+      "impossible_travel",
+      "device_spoofing",
+      "lateral_movement",
+      "low_and_slow"
+    ]
+  },
+  "feature_importance": {
+    "hour_deviation": 0.073,
+    "geo_novelty": 0.132,
+    "resource_novelty": 0.174,
+    "device_unseen": 0.0,
+    "os_mismatch": 0.0,
+    "duration_deviation": 0.089,
+    "auth_failure": 0.041,
+    "geo_velocity": 0.065,
+    "off_hours": 0.087,
+    "resource_sensitivity": 0.078,
+    "foreign_geo": 0.05,
+    "failure_burst": 0.085,
+    "ip_spread": 0.126
+  }
+}

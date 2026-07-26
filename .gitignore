@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Node.js
+node_modules/
+frontend/node_modules/
+
+# Frontend builds
+frontend/dist/
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environments / secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Large files / Data / Results
+results/*.npy
+results/*.parquet
+data/*.parquet

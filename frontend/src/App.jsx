@@ -3,7 +3,7 @@ import {
   BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Cell, PieChart, Pie, Tooltip
 } from 'recharts'
 
-const API = '/api'
+const API = 'https://sentinel-api.onrender.com/api'
 
 function useApi(path, deps = []) {
   const [data, setData] = useState(null)

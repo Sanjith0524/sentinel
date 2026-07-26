@@ -1,4 +1,5 @@
 {
+  "name": "sentinel",
   "dependencies": {
     "docx": "^9.7.1"
   }
